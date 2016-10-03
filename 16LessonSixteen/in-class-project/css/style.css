@@ -1,4 +1,25 @@
-.formFix {
-  margin: auto;
-  width: 50%;
+/*.top, .bottom {
+  height: 200px;
+}*/
+.section {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+.footerSmall {
+  visibility: hidden;
+}
+}
+.top {
+
+}
+.well {
+  border-radius: 0px;
+}
+.fourSquare {
+  padding:10px;
+
+}
+
+.container {
+  display: flex;
 }

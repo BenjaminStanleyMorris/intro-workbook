@@ -1,0 +1,236 @@
+.body {
+    margin: 0;
+}
+.banner {
+    padding-top: 100px;
+    height: 1000px;
+    color: grey;
+}
+.navbar-brand { position: relative; z-index: 2; }
+
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; }
+
+.navbar .navbar-collapse { position: relative; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; }
+
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+}
+
+#bannerParty {
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    clear: both;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale')";
+}
+
+.imgIcon {
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    margin: 20px;
+
+}
+.iconSection {
+    text-align: center;
+    background-color: #ff6249;
+    border-radius: 30px;
+}
+.mapInfoSection {
+  font-family: 'Raleway', sans-serif;
+  padding: 20px 100px 20px 100px;
+  text-align: center;
+}
+#map {
+    height: 500px;
+    border: 2px solid #002832;
+    border-radius: 30px;
+}
+.iconText {
+    color: black;
+}
+.paddingWrapper {
+  margin: 40px;
+  padding: 15px;
+  background-color: #002832;
+  border-radius: 30px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
+}
+.wrap-center {
+    margin: 0 auto;
+    position: relative;
+    max-width: 73.231em;
+}
+.banner-centered {
+    text-align: center;
+    position: absolute;
+    display: block;
+    max-width: 75.231em;
+    height: inherit;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.banner-centered h2 {
+    font-size: 80px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fafafa;
+    font-weight: 100;
+    display: block;
+}
+.formSection {
+    height: 200px;
+    background-color: white;
+}
+.formDiv {
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 30px;
+}
+
+.submitSection {
+  margin: 10px;
+
+}
+
+.locationDiv {
+  margin: 20px;
+}
+.labelText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+}
+.footerText {
+  padding-bottom: 250px;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+}
+.btn-default {
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+@@media (min-width: 800px) {
+    .banner {
+      font-size: 10px;
+    }
+}
+/* Reset */
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+.social-buttons {
+  height: 90px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.social-button {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: .99;
+  border-radius: 28%;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button:before {
+  content: '';
+  background-color: #000;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 90%;
+  left: -110%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button .fa {
+  font-size: 38px;
+  vertical-align: middle;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button.facebook:before {
+  background-color: #3B5998;
+}
+.social-button.facebook .fa {
+  color: grey;
+}
+.social-button.twitter:before {
+  background-color: #3CF;
+}
+.social-button.twitter .fa {
+  color: grey;
+}
+.social-button.google:before {
+  background-color: #DC4A38;
+}
+.social-button.google .fa {
+  color: grey;
+}
+.social-button.dribbble:before {
+  background-color: #F26798;
+}
+.social-button.dribbble .fa {
+  color: grey;
+}
+.social-button.skype:before {
+  background-color: #00AFF0;
+}
+.social-button.skype .fa {
+  color: grey;
+}
+.social-button:focus:before, .social-button:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-button:focus .fa, .social-button:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}

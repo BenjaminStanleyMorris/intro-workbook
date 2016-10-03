@@ -1,0 +1,15 @@
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  background-color: blue;
+  width: 80%;
+  margin: auto;
+}
+.bigBox {
+  height: 50%;
+  background-color: grey;
+}
+.smallBox {
+  height: 125px;
+  background-color: red;
+}
